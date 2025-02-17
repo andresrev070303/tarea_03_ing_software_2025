@@ -1,4 +1,5 @@
 import saludar from "./sumador";
+import saludarHora from "./saludarHora";
 
 const nombre_input = document.querySelector("#nombre");
 const form = document.querySelector("#saludar-form");
@@ -9,5 +10,5 @@ form.addEventListener("submit", (event) => {
 
   const nombre = nombre_input.value;
 
-  div.innerHTML = "<p> Hola " + saludar(nombre) + "</p>";
+  div.innerHTML = "<p>" + saludarHora() + saludar(nombre) + "</p>";
 });
