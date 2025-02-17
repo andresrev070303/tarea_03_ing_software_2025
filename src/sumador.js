@@ -1,8 +1,16 @@
-function saludar(nombre, genero) {
+function saludar(nombre, genero, edad) {
   if (genero === "M") {
-    return "Sr. " + nombre;
+    if (edad < 30) {
+      return "joven " + nombre;
+    } else {
+      return "Sr. " + nombre;
+    }
   } else if (genero === "F") {
-    return "Sra. " + nombre;
+    if (edad < 30) {
+      return "señorita " + nombre;
+    } else {
+      return "Sra. " + nombre;
+    }
   } else {
     return nombre;
   }
